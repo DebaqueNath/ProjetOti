@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+<head lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ICS vers JSON</title>
+	<meta http­equiv="X­UA­Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device­width, initial­scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="row">
+ 			<div class="col-lg-12"><legend> Convertir un fichier ICS en un tableau JSON</legend></div>
+		</div>
+		<div class="row">
+ 			<div class="col-lg-12"><label for="icsData" class="control­label">Données ICS à convertir</label></div>
+		</div>
+		<div class="row">
+ 			<div class="col-lg-12"><textarea class="form­control" id="icsData" rows="15" cols="100">données ICS ici</textarea></div>
+		</div>
+		<div class="row">
+ 			<div class="col-lg-4"><button id="convertir" type="button" class="btn btn-primary">Convertir !</button></div>
+		</div>
+
+		<BR/>
+
+		<!-- Formulaire Résultat -->
+
+		<div class="row">
+ 			<div class="col-lg-12"><legend> Convertion du fichier en JSON</legend></div>
+		</div>
+		<div class="row">
+ 			<div class="col-lg-12"><label for="jsonData" class="control­label">Données JSON</label></div>
+		</div>
+		<div class="row">
+ 			<div class="col-lg-12"><textarea class="form­control" id="jsonData" rows="15" cols="100"></textarea></div>
+		</div>
+
+
+	</div>
+</body>
+
+<script src="conversion_exc.js"></script>
+<script src="conversion.js"></script>
+
+</html>

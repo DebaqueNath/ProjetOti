@@ -129,7 +129,6 @@
 
         Conversion.prototype.conversionChamp = function (creneau,champActuel) {
         		if(champActuel.indexOf(":")!==-1){
-              console.log(champActuel);
         			var tab3 = champActuel.split(":");
         			if(tab3[0].startsWith("DTSTART")){
         				creneau.debut = tab3[1];

@@ -17,9 +17,9 @@ Liste des tests réalisés avec Selenium:
 - Test d'une conversion ICS en JSON lors du clique sur le bouton
 
 
-Fichier de configuration sonar
+Fichier de configuration sonar et karma
 
-Capture écran sonar début et fin processus + Informations sur la couverture des tests QUnit
+Capture écran sonar début et fin processus + Informations sur la couverture des tests QUnit (grâce à karma)
 
 sonar.h2.db (sonarqube/data) ou dump mysql
 

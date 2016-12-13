@@ -7,8 +7,7 @@ Liste des tests réalisés avec QUNIT:
 - Test général d'une conversion ICS en JSON
 - Test que la div source existe (Levée d'une exception)
 - Test que la div cible existe (Levée d'une exception)
-
-- Test que la classe Creneau contiennent les résultats attendus
+- Test de la méthode qui remplit un créneau
 - Test qu'une alert affiche bel et bien le résultat attendu
 
 
@@ -24,6 +23,6 @@ Capture écran sonar début et fin processus + Informations sur la couverture de
 
 sonar.h2.db (sonarqube/data) ou dump mysql
 
-Rapport retraçant les tests écrits, comment décider de répartir entre QUnit et Selenium, Difficultés rencontrés pour la mise en place des tests , Améliorations apportés au code, Que pensez vous des apports de tests et de leur mise en place.
-
-
+Rapport retraçant les tests écrits, comment décider de répartir entre QUnit et Selenium,
+Difficultés rencontrés pour la mise en place des tests , Améliorations apportés au code,
+Que pensez vous des apports de tests et de leur mise en place.

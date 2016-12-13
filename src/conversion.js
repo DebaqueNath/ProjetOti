@@ -98,8 +98,14 @@
               this.message=e.toString();
           }
 
-          if(this.source != null) this.conversion(this.source.value);
-      		if(this.cible != null) this.cible.value = this.resultat;
+          if(this.source != null){
+              this.conversion(this.source.value);
+          }
+      		if(this.cible != null) {
+            this.cible.value = this.resultat;
+          }
+
+          alert(this.resultat);
 
       	}
 
@@ -123,6 +129,7 @@
 
         Conversion.prototype.conversionChamp = function (creneau,champActuel) {
         		if(champActuel.indexOf(":")!==-1){
+              console.log(champActuel);
         			var tab3 = champActuel.split(":");
         			if(tab3[0].startsWith("DTSTART")){
         				creneau.debut = tab3[1];
@@ -207,4 +214,4 @@
       }
 */
       //On ajoute l'event listener
-      document.getElementById ("convertir").addEventListener("click",new Conversion());
+      document.getElementById ("convertir").addEventListener("click",new Conversion(document.getElementById('icsData'),document.getElementById('jsonData')));

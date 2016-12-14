@@ -104,8 +104,10 @@
       		if(this.cible != null) {
             this.cible.value = this.resultat;
           }
-
+          
           alert(this.resultat);
+
+          this.resultat="";
 
       	}
 
@@ -213,4 +215,4 @@
       }
 */
       //On ajoute l'event listener
-      //document.getElementById ("convertir").addEventListener("click",new Conversion(document.getElementById('icsData'),document.getElementById('jsonData')));
+      document.getElementById ("convertir").addEventListener("click",new Conversion(document.getElementById('icsData'),document.getElementById('jsonData')));

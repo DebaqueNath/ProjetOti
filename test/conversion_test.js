@@ -98,19 +98,23 @@ QUnit.test("test_affichage_alert", function(assert)
            fixture+=("<div class='row'><div class='col-lg-12'><textarea class='form­control' id='jsonData' rows='15' cols='100'></textarea></div></div>");
            fixture+=("<div id='res'></div>");
 
-          var old_alert=window.alert;
+           var old_alert=window.alert;
+
            //On redéfinit la méthode alert
            window.alert=function(s){
              document.getElementById("res").innerHTML=s;
            }
 
-           window.alert=old_alert;
+
 
            var fixtureNode=document.getElementById("qunit-fixture");
            fixtureNode.innerHTML=fixture;
 
            var c = new Conversion(document.getElementById('icsData'),document.getElementById('jsonData'));
            c.ihmConversion();
+
+           window.alert=old_alert;
+
            assert.equal(document.getElementById("res").innerHTML,"{\"debut\": '20160907T153000Z',\"fin\": '20160907T161500Z',\"resume\": 'Évolutions pour le logiciel Smiles2Monomers',\"lieu\": 'M5 - A1'}\n");
 }
 );

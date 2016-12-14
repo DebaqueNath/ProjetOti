@@ -11,18 +11,16 @@ Liste des tests réalisés avec QUNIT:
 - Test qu'une alert affiche bel et bien le résultat attendu
 
 
-Liste des tests réalisés avec Selenium:
+Liste des tests réalisés avec Selenium (voir fichier selenium.html) :
 
-- Test que l'alert s'affiche au clique sur le bouton
 - Test d'une conversion ICS en JSON lors du clique sur le bouton
 
 
-Fichier de configuration sonar et karma
+Les tests ayant été réalisés avec QUNIT ne nécessitent pas d'actions de l'utilisateur.
+Alors que le test réalisé avec Selenium simule le clic de l'utilisateur sur le bouton "Convertir".
 
-Capture écran sonar début et fin processus + Informations sur la couverture des tests QUnit (grâce à karma)
+La grosse difficulté pour mettre en place les tests à été d'adapter le code existant du projet. J'ai ajouté un fichier conversion_exc pour pouvoir gérer les exceptions lorsque
+la source ou la cible vallent null, ce qui permet de faire un test sur les exceptions.
 
-sonar.h2.db (sonarqube/data) ou dump mysql
-
-Rapport retraçant les tests écrits, comment décider de répartir entre QUnit et Selenium,
-Difficultés rencontrés pour la mise en place des tests , Améliorations apportés au code,
+A FINIR (test karma):
 Que pensez vous des apports de tests et de leur mise en place.

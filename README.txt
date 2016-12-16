@@ -22,5 +22,4 @@ Alors que le test réalisé avec Selenium simule le clic de l'utilisateur sur le
 La grosse difficulté pour mettre en place les tests à été d'adapter le code existant du projet. J'ai ajouté un fichier conversion_exc pour pouvoir gérer les exceptions lorsque
 la source ou la cible vallent null, ce qui permet de faire un test sur les exceptions.
 
-A FINIR (test karma):
-Que pensez vous des apports de tests et de leur mise en place.
+Les tests permettent de s'assurer que le code ne contient pas de bugs, l'utilisation de Sonar et Karma est très intéréssante pour vérifier la couverture de nos tests ainsi que la "propreté" du code.
